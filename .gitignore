@@ -1,0 +1,47 @@
+# Django specific
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+
+# Virtualenv
+venv/
+ENV/
+env/
+*.env
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+.cache
+nosetests.xml
+coverage/
+
+# Migrations
+*/migrations/
+
+# Static and media
+static/
+media/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# PyCharm
+*.pyc
+*.pyo
+*.pyd
+*.ini
+*.cfg
+*.egg-info
+dist/
+__pycache__/
+*/migrations/
+.pytest_cache/
