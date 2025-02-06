@@ -28,7 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 LOCAL_APPS = [
-    'projects'
+    'projects',
+    'users'
 ]
 # Application definition
 
@@ -50,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'users.middleware.AuditMiddleware'
 ]
 
 ROOT_URLCONF = 'shule_backend.urls'
@@ -124,3 +126,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'users.User'
+
