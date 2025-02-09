@@ -30,7 +30,8 @@ ALLOWED_HOSTS = []
 
 LOCAL_APPS = [
     'projects',
-    'users'
+    'users',
+    'llm'
 ]
 # Application definition
 

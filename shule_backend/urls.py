@@ -28,4 +28,5 @@ urlpatterns = [
     path('auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('projects/', include('projects.urls')),
     path('users/', include('users.urls')),
+    path('llm/', include('llm.urls')),
 ]
