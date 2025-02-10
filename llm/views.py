@@ -12,7 +12,7 @@ class OllamaAPIView(APIView):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
         data = serializer.validated_data
-        ollama_url = "http://localhost:11434/api/generate"
+        ollama_url = "http://localhost:11434/api/generate/"
         
         try:
             # Send request to Ollama
