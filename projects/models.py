@@ -1,6 +1,6 @@
 from django.db import models
 from core.models import AbstractBase
-from users.models import AbstractCreatorBase
+from users.models import AbstractCreatorBase, User
 
 class Project(AbstractCreatorBase):
     name = models.CharField(max_length=255)
