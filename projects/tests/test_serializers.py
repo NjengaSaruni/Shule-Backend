@@ -12,7 +12,9 @@ def api_client():
 
 @pytest.fixture
 def user():
-    return User.objects.create_user(
+    return User.objects.create(
+        first_name='Test',
+        last_name='User',
         email='test@example.com',
         password='testpass123'
     )
